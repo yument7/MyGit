@@ -1,0 +1,355 @@
+.layui-side-self {
+	background: #2f4050;
+	width: 220px!important;
+}
+
+.layui-main-self {
+	left: 220px!important;
+}
+
+.layui-mybg {
+	background-color: #142534!important;
+}
+
+body.mini-sidebar .layui-side-self {
+	background: #2f4050;
+	width: 64px!important;
+	transition: width 0.5s ease-in-out;
+}
+
+body.mini-sidebar .layui-main-self {
+	left: 64px!important;
+	transition: width 0.5s ease-in-out;
+}
+
+body.mini-sidebar .mm-collapse {
+	display: none;
+}
+
+body.mini-sidebar .metismenu li>a {
+	text-align: center;
+	font-size: 16px;
+	border-bottom: 1px solid #293846;
+}
+
+body.mini-sidebar .metismenu li>a>span.fa {
+	margin-right: 3px;
+}
+
+body.mini-sidebar .metismenu li>a>span.nav-label {
+	display: none;
+}
+
+body.mini-sidebar .metismenu .has-arrow::after {
+	display: none;
+}
+
+
+/*右侧aside 导航菜单*/
+
+.sidebar-nav {
+	background: #2f4050;
+}
+
+.sidebar-nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	background: #293846;
+}
+
+.sidebar-nav .metismenu {
+	background: #2f4050;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.sidebar-nav .metismenu .mm-collapse li:first-child {
+	margin-top: 5px;
+}
+
+.sidebar-nav .metismenu li:last-child {
+	margin-bottom: 5px;
+}
+
+.sidebar-nav .metismenu>li {
+	/*-webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;*/
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	position: relative;
+}
+.mm-active::before{
+	content: ".";
+	position: absolute;
+	top:0;
+	left:0;
+	height: 42px;
+	width:4px;
+	background: #006621;
+}
+
+
+.sidebar-nav .metismenu a {
+	position: relative;
+	display: block;
+	padding: 13px 15px;
+	color: #B6BCBF;
+	outline-width: 0;
+	font-weight: 500;
+	transition: all .3s ease-out;
+}
+
+.sidebar-nav .metismenu ul a {
+	padding: 10px 15px 10px 30px;
+}
+
+.sidebar-nav .metismenu ul ul a {
+	padding: 10px 15px 10px 45px;
+}
+
+.sidebar-nav .metismenu a:hover,
+.sidebar-nav .metismenu a:focus,
+.sidebar-nav .metismenu a:active {
+	color: #fff;
+	text-decoration: none;
+	background: #36648B;
+}
+
+.sidebar-nav .metismenu-active{
+	background: #36648B;/*#00B2EE*/
+    color: #fff!important;
+}
+
+
+/*主题选项卡*/
+
+.content-tabs {
+	position: relative;
+	height: 40px;
+	background: #fafafa;
+	line-height: 40px;
+	border-bottom: solid 2px #2f4050;
+}
+
+.content-tabs .roll-nav,
+.page-tabs-list {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	color: #999;
+	z-index: 2;
+	top: 0
+}
+
+.content-tabs .roll-left {
+	left: 0px;
+	border-right: solid 1px #ddd;
+}
+
+.content-tabs .J_tabLeft {
+	left: 40px;
+}
+
+.content-tabs .roll-right {
+	right: 0;
+	border-left: solid 1px #E5E5E5;
+}
+
+.content-tabs .J_tabRight {
+	right: 91px;
+}
+
+.content-tabs button {
+	background: #fff;
+	border: 0;
+	height: 40px;
+	width: 40px;
+	outline: 0
+}
+
+.content-tabs button:hover {
+	background: #fafafa;
+}
+
+nav.page-tabs {
+	margin-left: 80px;
+	width: 100000px;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+	/*padding-left: 100px;*/
+}
+
+nav.page-tabs .page-tabs-content {
+	float: left;
+	margin-left: 100px;
+}
+
+.fixed-tabs{
+	width:100px;
+	float: left;
+}
+
+.fixedTab{
+	width:100px;
+	box-sizing: border-box;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 100;
+	float:none!important;
+	background: #fff;
+}
+
+.page-tabs .fixedTab:hover {
+	color: #EE7600;
+	background: #DEDEDE;
+	cursor: pointer;
+}
+
+.page-tabs .page-tabs-content a {
+	display: block;
+	float: left;
+	border-right: solid 1px #ddd;
+	padding: 0 15px;
+	color: #473C8B;
+}
+
+.page-tabs a i {
+	color: #ccc;
+}
+
+.page-tabs a i:hover {
+	color: #c00;
+}
+
+.page-tabs a.active {
+	background: #2f4050;
+	color: #FFEBCD;
+}
+
+.page-tabs a.active i:hover,
+.page-tabs a.active:hover {
+	background: #293846;
+	color: #FF8C00;
+}
+
+.content-tabs .roll-nav:hover,
+.page-tabs-content a:hover {
+	color: #EE7600;
+	background: #DEDEDE;
+	cursor: pointer;
+}
+
+.roll-right.btn-group {
+	width: 90px;
+	padding: 0;
+}
+
+.roll-right.J_tabExit {
+	background: #fff;
+	height: 40px;
+	width: 60px;
+	outline: 0;
+}
+
+.roll-right .tabs-close {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+.roll-right .tabs-close li {
+	display: block;
+	position: relative;
+}
+
+.roll-right .tabs-close li>a {
+	display: block;
+	box-sizing: border-box;
+	padding-right: 25px;
+	text-align: right;
+	color:#666;
+}
+.roll-right .tabs-close li>a:hover{
+	background: #DEDEDE;
+	cursor: pointer;
+}
+.roll-right .tabs-close li>a>span:hover{
+	color: #EE7600;
+}
+
+.roll-right .tabs-close li>a>span {
+	position: absolute;
+	font-size: 16px;
+	right: 10px;
+	top: 12px;
+	color: #999;
+}
+
+.roll-right dl.tabs-close-child {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 42px;
+	width:129px;
+	line-height: 36px;
+	padding: 5px 0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .12);
+	border-left: 1px solid #d2d2d2;
+	border-right: 1px solid #d2d2d2;
+	border-bottom: 1px solid #d2d2d2;
+	background-color: #fff;
+	z-index: 100;
+	border-radius: 0 0 2px 2px;
+	white-space: nowrap;
+	transition:all 0.5s;
+}
+
+.roll-right dl>dd {
+	padding: 0 8px;
+	
+}
+.roll-right dl>dd>a:hover{
+	color: #EE7600;
+	cursor: pointer;
+}
+.roll-right dl>dd:first-child{
+	border-bottom: 1px solid #E5E5E5;
+}
+/* 主题内容  */
+#content-main {
+    height: calc(100% - 75px);
+    overflow: auto;
+    position: relative;
+}
+
+
+
+/* 自定义滚动条  */
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #999;
+}

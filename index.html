@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>layout</title>
+		<link href="./node_modules/font-awesome/css/font-awesome.css" rel="stylesheet">
+		<link href="./node_modules/animate.css/animate.css" rel="stylesheet">
+		<link href="./asserts/css/customization.css" rel="stylesheet">
+
+		<script src="./node_modules/requirejs/require.js" data-main="./config/main"></script>
+	</head>
+
+	<body class="layui-layout-body">
+		<div class="layui-layout layui-layout-admin">
+			<div class="layui-header layui-mybg">
+				<div class="layui-logo"><img src="asserts/images/logo-rupu.png"></div>
+				<!-- 头部区域（可配合layui已有的水平导航） -->
+				<ul class="layui-nav layui-layout-right">
+					<li class="layui-nav-item">
+						<a href="javascript:;">
+							<img src="asserts/images/headPic.png" class="layui-nav-img"> Admin
+						</a>
+						<dl class="layui-nav-child">
+							<dd>
+								<a href="">个人资料</a>
+							</dd>
+							<dd>
+								<a href="">安全设置</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="layui-nav-item">
+						<a href="">首页</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="">安全退出</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="layui-side layui-side-self">
+				<aside class="sidebar-collapse">
+					<nav class="sidebar-nav">
+						<ul class="metismenu" id="side-menu">
+							<li class="mm-active">
+								<a class="has-arrow active" href="#" aria-expanded="true">
+									<span class="fa fa-home"></span>
+									<span class="nav-label">Jquery Plugins</span>
+								</a>
+								<ul class="mm-collapse">
+									<li>
+										<a class="J_menuItem" href="./pages/jQueryValidate/jQueryValidate.html">
+											<span class="fa fa-fw fa-code-fork"></span> jQueryValidate
+										</a>
+									</li>
+									<li>
+										<a class="J_menuItem" href="./pages/select2/select2.html">
+											<span class="fa fa-fw fa-exclamation-triangle"></span> select2
+										</a>
+									</li>
+									<li>
+										<a class="J_menuItem" href="./pages/select/select.html">
+											<span class="fa fa-fw fa-exclamation-triangle"></span> select
+										</a>
+									</li> 
+								</ul>
+							</li>
+							<li>
+								<a class="has-arrow" href="#" aria-expanded="false">
+									<span class="fa fa-home"></span>
+									<span class="nav-label">Chart Plugins</span>
+								</a>
+								<ul class="mm-collapse">
+									<li>
+										<a class="J_menuItem" href="./pages/echarts/echarts.html">echarts</a>
+									</li>
+									<li>
+										<a class="J_menuItem" href="./pages/hcharts/hcharts.html">hcharts</a>
+									</li>
+									<li>
+										<a class="J_menuItem" href="#">onokumus</a>
+									</li>
+									<li>
+										<a class="J_menuItem" href="#">item 0.4</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="has-arrow" href="#" aria-expanded="false">
+									<span class="fa fa-home"></span>
+									<span class="nav-label">Iconfont Plugins</span>
+								</a>
+								<ul class="mm-collapse">
+									<li>
+										<a href="#">item 1.1</a>
+									</li>
+									<li>
+										<a href="#">item 1.2</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="has-arrow" href="#" aria-expanded="false">
+									<span class="fa fa-home"></span>
+									<span class="nav-label">other Plugins</span>
+								</a>
+								<ul class="mm-collapse">
+									<li>
+										<a href="#">item 2.1</a>
+									</li>
+									<li>
+										<a href="#">item 2.2</a>
+									</li>
+									<li>
+										<a href="#">item 2.3</a>
+									</li>
+									<li>
+										<a href="#">item 2.4</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</aside>
+			</div>
+
+			<div class="layui-body layui-main-self">
+				<!--头部选项卡-->
+				<div class="content-tabs">
+					<button class="navbar-minimalize roll-nav roll-left">
+                        <i class="fa fa-bars"></i>
+                    </button>
+					<button class="roll-nav roll-left J_tabLeft">
+                        <i class="fa fa-backward"></i>
+                    </button>
+					<nav class="page-tabs J_menuTabs">
+						<div class="page-tabs-content">
+							<a href="javascript:void(0)" class="active J_menuTab fixedTab" data-id="./pages/dashboard/dashboard.html">Dashboard</a>
+						</div>
+					</nav>
+					<button class="roll-nav roll-right J_tabRight">
+                        <i class="fa fa-forward"></i>
+                    </button>
+					<div class="btn-group roll-nav roll-right">
+						<ul class="tabs-close">
+							<li>
+								<a href="javascript:;" class="cartbtn-switcher">
+									关闭操作
+									<span class="fa fa-caret-down"></span>
+								</a>
+								<dl class="tabs-close-child">
+									<dd class="J_tabShowActive">
+										<a>定位当前选项卡</a>
+									</dd>
+									<dd class="J_tabCloseAll">
+										<a>关闭全部选项卡</a>
+									</dd>
+									<dd class="J_tabCloseOther">
+										<a>关闭其他选项卡</a>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 内容主体区域 -->
+				<div style="padding: 15px;" class="J_mainContent" id="content-main">
+                    <div class="J_iframe" name="iframe0" width="100%" height="100%" src="./pages/dashboard/dashboard.html" frameborder="0" data-id="./pages/dashboard/dashboard.html" seamless></div>
+                </div>
+			</div>
+
+			<div class="layui-footer layui-main-self">
+				<!-- 底部固定区域 -->
+				© rupu.com - 如瀑虚拟官方网站
+			</div>
+		</div>
+
+	</body>
+
+</html>
