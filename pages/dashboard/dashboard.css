@@ -1,0 +1,182 @@
+.ptb15{
+	padding-top:15px;
+	padding-bottom: 15px;
+}
+.prbl15{
+	padding-right:10px;
+	padding-bottom:15px;
+	padding-left:10px;
+}
+.prb1015{
+	padding-right:10px;
+	padding-bottom:15px;
+}
+.plb1015{
+	padding-left:10px;
+	padding-bottom:15px;
+}
+
+.my-card{
+	margin: 15px 0 15px 0;
+}
+
+.my-card:first-child{
+	margin-top: 5px;
+}
+
+.my-card:last-child{
+	margin-bottom:0;
+}
+
+.my-card-title{
+	position: relative;
+    height: 40px;
+    padding: 0;
+    border-bottom: 2px solid #63B8FF;
+    color: #333;
+    font-size: 14px;
+    overflow: hidden;
+    font-size: 0;
+}
+.my-card-title>span{
+	display: inline-block;
+	box-sizing: border-box;
+	font-weight: 600;
+	font-size: 16px;
+	padding:0 15px;
+	height: 40px;
+    line-height: 28px;
+   padding-top: 7px;
+    vertical-align: middle;
+}
+
+.border-btm-purple{
+	border-bottom: 4px solid #8470FF;
+}
+
+.border-btm-orange{
+	border-bottom: 4px solid #ff6500;
+}
+
+.border-btm-black{
+	border-bottom: 4px solid #142534;
+}
+
+.border-btm-green{
+	border-bottom: 4px solid #228B22!important;
+}
+
+.border-btm-yellow{
+	border-bottom: 4px solid #FFD700;
+}
+
+.my-card-body{
+	position: relative;
+	padding-top: 15px;
+}
+
+.title-color{
+	color:#0366d6!important;
+	font-weight: 600;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+.layui-card-header{
+	border-bottom:1px solid #DFE4ED;
+}
+.layui-card-header dl{
+	position: relative;
+}
+.layui-card-header dt{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 15px;
+}
+.layui-card-header dd{
+	display: inline-block;
+	top:0;
+	right:0;
+	position: absolute;
+}
+.layui-card-header dd>span{
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	padding:9px 5px 7px;
+	line-height: 26px;
+}
+.layui-card-header dd>span:last-child{
+	padding-right: 0;
+}
+
+.layui-card-header dd a{
+	display: block;
+	padding: 0 7px;
+	border: 1px solid #D1DADE;
+	border-radius: 3px;
+	line-height: 24px;
+	box-sizing: border-box;
+	background: #FFF8DC;
+}
+
+.layui-card-header dd a:hover{
+	cursor: pointer;
+	color:#0366D6;
+}
+.layui-card-header dd a i{
+	margin-right: 5px;
+}
+
+.i-number{
+	font-weight: 500;
+	margin-left:5px;
+	margin-right: 0;
+}
+
+.layui-card-body dl{
+	line-height: 32px;
+	overflow: hidden;
+	vertical-align: top;
+}
+
+.layui-card-body dt{
+	width:80px;
+	float:left;
+	text-align: right;
+	box-sizing: border-box;
+	padding-right: 10px;
+	color:#8B3E2F;
+}
+
+.layui-card-body dd{
+	width:calc(100% - 80px);
+	float:left;
+}
+
+.layui-card-body a:hover{
+	cursor: pointer;
+	color:#0366D6;
+}
+
+
+.icon-red{
+	color:#FF6A6A;
+}
+.icon-black{
+	color:#171717;
+}
+.icon-green{
+	color:#228B22;
+}
+.icon-blue{
+	color:#1E90FF;
+}
+.icon-orange{
+	color:#EE7600;
+}
+.icon-purple{
+	color:#D02090;
+}
+.icon-gray{
+	color:#C2C2C2;
+}

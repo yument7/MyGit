@@ -11,6 +11,11 @@
 	background-color: #142534!important;
 }
 
+.layui-footer-bg{
+	background: #142534!important;
+	color: #FFEBCD;
+}
+
 body.mini-sidebar .layui-side-self {
 	background: #2f4050;
 	width: 64px!important;
@@ -333,12 +338,11 @@ nav.page-tabs .page-tabs-content {
 }
 /* 主题内容  */
 #content-main {
-    height: calc(100% - 75px);
+    height: calc(100% - 42px);
     overflow: auto;
     position: relative;
+    background: #EBEBED;
 }
-
-
 
 /* 自定义滚动条  */
 ::-webkit-scrollbar-track {

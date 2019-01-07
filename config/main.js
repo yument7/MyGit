@@ -139,13 +139,3 @@ function setTitle(name) {
     var title = $('.J_iframe #' + name).attr('name') || $('.J_iframe:visible .wrapper-content').attr('name');
     $('title').text(window.pageTitle + (title ? '-' + title : ''));
 }
-
-// ie title在加载flash时变成#
-/*document.attachEvent && document.attachEvent('onpropertychange', function(evt) {
-    evt = evt || window.event;
-    if (evt.propertyName === 'title' && $('title').text().indexOf('#') >= 0) {
-        setTimeout(function() {
-            setTitle();
-        });
-    }
-});*/

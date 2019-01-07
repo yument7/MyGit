@@ -109,7 +109,6 @@ function selectTab(src) {
 	var current = $('a.J_menuItem[href="' + src + '"]');
 	if(src){
 		$("a.J_menuItem").removeClass("metismenu-active");
-		console.log("111");
 		current.addClass("metismenu-active");
 	}
 }
