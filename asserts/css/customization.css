@@ -357,3 +357,22 @@ nav.page-tabs .page-tabs-content {
 ::-webkit-scrollbar-thumb {
     background-color: #999;
 }
+
+/* 通用边距浮动 */
+.ptb15{
+	padding-top:15px!important;
+	padding-bottom: 15px!important;
+}
+.prbl15{
+	padding-right:10px!important;
+	padding-bottom:15px!important;
+	padding-left:10px!important;
+}
+.prb1015{
+	padding-right:10px!important;
+	padding-bottom:15px!important;
+}
+.plb1015{
+	padding-left:10px!important;
+	padding-bottom:15px!important;
+}

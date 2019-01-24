@@ -15,6 +15,7 @@ require.config({
 		slimscroll: 'jquery-slimscroll/jquery.slimscroll',
 		echarts: 'echarts/dist/echarts',
         echartsMapChina: 'echarts/map/js/china',
+        fancybox: 'fancybox/dist/js/jquery.fancybox',
 		'../jquery.validate': 'jquery-validation/dist/jquery.validate',
 		jqueryValidationZh: 'jquery-validation/dist/localization/messages_zh',
 		text: 'requirejs-text/text',
@@ -29,12 +30,15 @@ require.config({
 		},
 		slimscroll: {
             deps: ['jquery']
-        }
+       },
+       fancybox: {
+            deps: ['css!../node_modules/fancybox/dist/css/jquery.fancybox.css']
+       }
 	}
 });
 
 // 框架加载
-require(['jquery', 'layui', 'metisMenu','slimscroll'], function() {
+require(['jquery','layui','metisMenu','slimscroll'], function() {
 	layui.use(['element','layer'], function() {
 		var element = layui.element;
 		var layer = layui.layer;

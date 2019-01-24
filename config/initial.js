@@ -43,7 +43,6 @@ $("a.cartbtn-switcher").click(function() {
 });
 
 // 导航菜单链接及选项卡和初始化
-
 var homeSrc = $('div[name="iframe0"]').attr('src');
 pageLoad(homeSrc, 'init');
 selectTab(homeSrc);

@@ -27,6 +27,7 @@
     "requirejs": "^2.3.6",
     "requirejs-text": "^2.0.15",
     "select2": "^4.0.6-rc.1",
+    "vue": "^2.5.22",
     "webuploader": "^0.1.8",
     "ztree": "^3.5.24"
   }
