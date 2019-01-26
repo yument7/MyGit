@@ -137,6 +137,10 @@ function triggerMIeffects() {
 			exsit_opt = false;
 			return false;
 		}
+		if($(this).data("id") == src && $(this).hasClass("active")){
+			exsit_opt = false;
+			return false;
+		}
 	});
 	if(exsit_opt) {
 		pageLoad($(".J_menuTab.active").data("id"), "out");

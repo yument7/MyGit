@@ -115,13 +115,13 @@
 	margin-right: 0;
 }
 
-.layui-card-body dl{
+section.box-text dl{
 	line-height: 32px;
 	overflow: hidden;
 	vertical-align: top;
 }
 
-.layui-card-body dt{
+section.box-text dt{
 	width:80px;
 	float:left;
 	text-align: right;
@@ -130,7 +130,7 @@
 	color:#8B3E2F;
 }
 
-.layui-card-body dd{
+section.box-text dd{
 	width:calc(100% - 80px);
 	float:left;
 }

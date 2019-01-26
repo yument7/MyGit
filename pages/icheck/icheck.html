@@ -1,0 +1,729 @@
+<div id="icheck" class="wrapper wrapper-content animated fadeIn" name="树结构插件">
+	<div class="layui-row">
+		<div class="layui-col-sm12 pb15">
+			<div class="layui-card">
+				<div class="layui-card-header my-title">
+					<span>
+                		<h3>icheck</h3>
+                	</span>
+				</div>
+				<div class="layui-card-body">
+					<div class="alert alert-warning">
+						官方文档及更多示例请参考：
+						<a href="https://github.com/fronteed/iCheck" target="_blank">https://github.com/fronteed/iCheck</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="layui-row">
+		<div class="layui-col-sm12 pb15">
+			<div class="layui-card float-e-margins">
+				<div class="layui-card-header">
+					<h5>Demo</h5>
+					<div class="card-tools">
+						<a class="collapse-link">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+						<a class="close-link">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="layui-card-body">
+					<div class="flex-box">
+						<div class="demo demo-list">
+							<ul>
+								<li>
+									<input tabindex="1" type="checkbox" id="input-1">
+									<label for="input-1">Checkbox, <span>#input-1</span></label>
+								</li>
+								<li>
+									<input tabindex="3" type="radio" id="input-3" name="demo-radio">
+									<label for="input-3">Radio button, <span>#input-3</span></label>
+								</li>
+								<li>
+									<input tabindex="2" type="checkbox" id="input-2" checked>
+									<label for="input-2">Checkbox, <span>#input-2</span></label>
+								</li>
+
+								<li>
+									<input tabindex="4" type="radio" id="input-4" name="demo-radio" checked>
+									<label for="input-4">Radio button, <span>#input-4</span></label>
+								</li>
+							</ul>
+						</div>
+						<div class="demo">
+							<dl class="demo-methods">
+								<dt>
+					            	<span class="self do-check">Add <span class="mark">checked</span> state to 1 and 3 inputs</span>
+          						</dt>
+								<dt>
+					            	<span class="self do-uncheck">Remove <span class="mark">checked</span> state from 1 and 3 inputs</span>
+					        	</dt>
+								<dt>
+					            	<span class="self do-disable">Add <span class="mark">disabled</span> state to 2 and 4 inputs</span>
+					        	</dt>
+								<dt>
+						            <span class="self do-enable">Remove <span class="mark">disabled</span> state from 2 and 4 inputs</span>
+						        </dt>
+								<dt>
+						            <span class="self do-destroy">Remove all traces of iCheck</span>
+						        </dt>
+							</dl>
+						</div>
+						<div class="demo">
+							<dl class="demo-methods">
+								<dd>
+									<pre class="markup">$('#input-1, #input-3').iCheck('check');</pre>
+								</dd>
+								<dd>
+									<pre class="markup">$('#input-1, #input-3').iCheck('uncheck');</pre>
+								</dd>
+								<dd>
+									<pre class="markup">$('#input-2, #input-4').iCheck('disable');</pre>
+								</dd>
+								<dd>
+									<pre class="markup">$('#input-2, #input-4').iCheck('enable');</pre>
+								</dd>
+								<dd>
+									<pre class="markup">$('input').iCheck('destroy');</pre>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--skin-->
+	<div class="layui-row">
+		<div class="layui-col-sm12 pb15">
+			<div class="layui-card">
+				<div class="layui-card-header my-title">
+					<span>
+						<h3 class="border-btm-green">SKIN</h3>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--具体的各种 skin-->
+	<div class="layui-row">
+		<div class="layui-col-sm6 prb1015">
+			<!-- Minimal skin -->
+			<div class="layui-card float-e-margins">
+				<div class="layui-card-header ">
+					<h5>Minimal skin</h5>
+					<div class="card-tools">
+						<a class="collapse-link">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+
+						<a class="close-link">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="layui-card-body">
+					<div class="skin skin-minimal">
+						<dl class="clear">
+							<dd class="selected">
+								<div class="skin-section">
+									<h4>演示</h4>
+									<ul class="list">
+										<li>
+											<input tabindex="5" type="checkbox" id="minimal-checkbox-1">
+											<label for="minimal-checkbox-1">Checkbox 1</label>
+										</li>
+										<li>
+											<input tabindex="6" type="checkbox" id="minimal-checkbox-2" checked>
+											<label for="minimal-checkbox-2">Checkbox 2</label>
+										</li>
+										<li>
+											<input type="checkbox" id="minimal-checkbox-disabled" disabled>
+											<label for="minimal-checkbox-disabled">Disabled</label>
+										</li>
+										<li>
+											<input type="checkbox" id="minimal-checkbox-disabled-checked" checked disabled>
+											<label for="minimal-checkbox-disabled-checked">Disabled &amp; checked</label>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<input tabindex="7" type="radio" id="minimal-radio-1" name="minimal-radio">
+											<label for="minimal-radio-1">Radio button 1</label>
+										</li>
+										<li>
+											<input tabindex="8" type="radio" id="minimal-radio-2" name="minimal-radio" checked>
+											<label for="minimal-radio-2">Radio button 2</label>
+										</li>
+										<li>
+											<input type="radio" id="minimal-radio-disabled" disabled>
+											<label for="minimal-radio-disabled">Disabled</label>
+										</li>
+										<li>
+											<input type="radio" id="minimal-radio-disabled-checked" checked disabled>
+											<label for="minimal-radio-disabled-checked">Disabled &amp; checked</label>
+										</li>
+									</ul>
+									<div class="colors clear">
+										<strong>Color schemes</strong>
+										<ul>
+											<li class="active" title="Black"></li>
+											<li class="red" title="Red"></li>
+											<li class="green" title="Green"></li>
+											<li class="blue" title="Blue"></li>
+											<li class="aero" title="Aero"></li>
+											<li class="grey" title="Grey"></li>
+											<li class="orange" title="Orange"></li>
+											<li class="yellow" title="Yellow"></li>
+											<li class="pink" title="Pink"></li>
+											<li class="purple" title="Purple"></li>
+										</ul>
+									</div>
+								</div>
+								<div class="skin-section skin-states">
+									<h4>状态</h4>
+									<ul class="list">
+										<li>
+											<div class="state icheckbox_minimal"></div>
+											<div class="state iradio_minimal"></div>
+											Normal
+										</li>
+										<li>
+											<div class="state icheckbox_minimal hover"></div>
+											<div class="state iradio_minimal hover"></div>
+											Hover
+										</li>
+										<li>
+											<div class="state icheckbox_minimal checked"></div>
+											<div class="state iradio_minimal checked"></div>
+											Checked
+										</li>
+										<li>
+											<div class="state icheckbox_minimal disabled"></div>
+											<div class="state iradio_minimal disabled"></div>
+											Disabled
+										</li>
+										<li>
+											<div class="state icheckbox_minimal checked disabled"></div>
+											<div class="state iradio_minimal checked disabled"></div>
+											Disabled &amp; checked
+										</li>
+									</ul>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!-- Flat skin -->
+			<div class="layui-card float-e-margins">
+				<div class="layui-card-header ">
+					<h5>Flat skin</h5>
+					<div class="card-tools">
+						<a class="collapse-link">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+
+						<a class="close-link">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="layui-card-body">
+					<div class="skin skin-flat">
+						<dl class="clear">
+							<dd class="selected">
+								<div class="skin-section">
+									<h4>演示</h4>
+									<ul class="list">
+										<li>
+											<input tabindex="13" type="checkbox" id="flat-checkbox-1">
+											<label for="flat-checkbox-1">Checkbox 1</label>
+										</li>
+										<li>
+											<input tabindex="14" type="checkbox" id="flat-checkbox-2" checked>
+											<label for="flat-checkbox-2">Checkbox 2</label>
+										</li>
+										<li>
+											<input type="checkbox" id="flat-checkbox-disabled" disabled>
+											<label for="flat-checkbox-disabled">Disabled</label>
+										</li>
+										<li>
+											<input type="checkbox" id="flat-checkbox-disabled-checked" checked disabled>
+											<label for="flat-checkbox-disabled-checked">Disabled &amp; checked</label>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<input tabindex="15" type="radio" id="flat-radio-1" name="flat-radio">
+											<label for="flat-radio-1">Radio button 1</label>
+										</li>
+										<li>
+											<input tabindex="16" type="radio" id="flat-radio-2" name="flat-radio" checked>
+											<label for="flat-radio-2">Radio button 2</label>
+										</li>
+										<li>
+											<input type="radio" id="flat-radio-disabled" disabled>
+											<label for="flat-radio-disabled">Disabled</label>
+										</li>
+										<li>
+											<input type="radio" id="flat-radio-disabled-checked" checked disabled>
+											<label for="flat-radio-disabled-checked">Disabled &amp; checked</label>
+										</li>
+									</ul>
+									<div class="colors clear">
+										<strong>Color schemes</strong>
+										<ul>
+											<li title="Black"></li>
+											<li class="red active" title="Red"></li>
+											<li class="green" title="Green"></li>
+											<li class="blue" title="Blue"></li>
+											<li class="aero" title="Aero"></li>
+											<li class="grey" title="Grey"></li>
+											<li class="orange" title="Orange"></li>
+											<li class="yellow" title="Yellow"></li>
+											<li class="pink" title="Pink"></li>
+											<li class="purple" title="Purple"></li>
+										</ul>
+									</div>
+								</div>
+								<div class="skin-section skin-states">
+									<h4>状态</h4>
+									<ul class="list">
+										<li>
+											<div class="state icheckbox_flat-red"></div>
+											<div class="state iradio_flat-red"></div>
+											Normal
+										</li>
+										<li>
+											<div class="state icheckbox_flat-red checked"></div>
+											<div class="state iradio_flat-red checked"></div>
+											Checked
+										</li>
+										<li>
+											<div class="state icheckbox_flat-red disabled"></div>
+											<div class="state iradio_flat-red disabled"></div>
+											Disabled
+										</li>
+										<li>
+											<div class="state icheckbox_flat-red checked disabled"></div>
+											<div class="state iradio_flat-red checked disabled"></div>
+											Disabled &amp; checked
+										</li>
+									</ul>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!-- polaris skin -->
+			<div class="layui-card float-e-margins">
+				<div class="layui-card-header ">
+					<h5>Polaris skin</h5>
+					<div class="card-tools">
+						<a class="collapse-link">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+
+						<a class="close-link">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="layui-card-body">
+					<div class="skin skin-polaris">
+						<dl class="clear">
+							<dd class="selected">
+								<div class="skin-section">
+									<h4>演示</h4>
+									<ul class="list">
+										<li>
+											<input tabindex="21" type="checkbox" id="polaris-checkbox-1">
+											<label for="polaris-checkbox-1">Checkbox 1</label>
+										</li>
+										<li>
+											<input tabindex="22" type="checkbox" id="polaris-checkbox-2" checked>
+											<label for="polaris-checkbox-2">Checkbox 2</label>
+										</li>
+										<li>
+											<input type="checkbox" id="polaris-checkbox-disabled" disabled>
+											<label for="polaris-checkbox-disabled">Disabled</label>
+										</li>
+										<li>
+											<input type="checkbox" id="polaris-checkbox-disabled-checked" checked disabled>
+											<label for="polaris-checkbox-disabled-checked">Disabled &amp; checked</label>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<input tabindex="23" type="radio" id="polaris-radio-1" name="polaris-radio">
+											<label for="polaris-radio-1">Radio button 1</label>
+										</li>
+										<li>
+											<input tabindex="24" type="radio" id="polaris-radio-2" name="polaris-radio" checked>
+											<label for="polaris-radio-2">Radio button 2</label>
+										</li>
+										<li>
+											<input type="radio" id="polaris-radio-disabled" disabled>
+											<label for="polaris-radio-disabled">Disabled</label>
+										</li>
+										<li>
+											<input type="radio" id="polaris-radio-disabled-checked" checked disabled>
+											<label for="polaris-radio-disabled-checked">Disabled &amp; checked</label>
+										</li>
+									</ul>
+								</div>
+								<div class="skin-section skin-states">
+									<h4>状态</h4>
+									<ul class="list">
+										<li>
+											<div class="state icheckbox_polaris"></div>
+											<div class="state iradio_polaris"></div>
+											Normal
+										</li>
+										<li>
+											<div class="state icheckbox_polaris hover"></div>
+											<div class="state iradio_polaris hover"></div>
+											Hover
+										</li>
+										<li>
+											<div class="state icheckbox_polaris checked"></div>
+											<div class="state iradio_polaris checked"></div>
+											Checked
+										</li>
+										<li>
+											<div class="state icheckbox_polaris disabled"></div>
+											<div class="state iradio_polaris disabled"></div>
+											Disabled
+										</li>
+										<li>
+											<div class="state icheckbox_polaris checked disabled"></div>
+											<div class="state iradio_polaris checked disabled"></div>
+											Disabled &amp; checked
+										</li>
+									</ul>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="layui-col-sm6 plb1015">
+			<!-- Square skin -->
+			<div class="layui-card float-e-margins">
+				<div class="layui-card-header ">
+					<h5>Square skin</h5>
+					<div class="card-tools">
+						<a class="collapse-link">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+
+						<a class="close-link">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="layui-card-body">
+					<div class="skin skin-square">
+						<dl class="clear">
+							<dd class="selected">
+								<div class="skin-section">
+									<h4>演示</h4>
+									<ul class="list">
+										<li>
+											<input tabindex="9" type="checkbox" id="square-checkbox-1">
+											<label for="square-checkbox-1">Checkbox 1</label>
+										</li>
+										<li>
+											<input tabindex="10" type="checkbox" id="square-checkbox-2" checked>
+											<label for="square-checkbox-2">Checkbox 2</label>
+										</li>
+										<li>
+											<input type="checkbox" id="square-checkbox-disabled" disabled>
+											<label for="square-checkbox-disabled">Disabled</label>
+										</li>
+										<li>
+											<input type="checkbox" id="square-checkbox-disabled-checked" checked disabled>
+											<label for="square-checkbox-disabled-checked">Disabled &amp; checked</label>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<input tabindex="11" type="radio" id="square-radio-1" name="square-radio">
+											<label for="square-radio-1">Radio button 1</label>
+										</li>
+										<li>
+											<input tabindex="12" type="radio" id="square-radio-2" name="square-radio" checked>
+											<label for="square-radio-2">Radio button 2</label>
+										</li>
+										<li>
+											<input type="radio" id="square-radio-disabled" disabled>
+											<label for="square-radio-disabled">Disabled</label>
+										</li>
+										<li>
+											<input type="radio" id="square-radio-disabled-checked" checked disabled>
+											<label for="square-radio-disabled-checked">Disabled &amp; checked</label>
+										</li>
+									</ul>
+									<div class="colors clear">
+										<strong>Color schemes</strong>
+										<ul>
+											<li title="Black"></li>
+											<li class="red" title="Red"></li>
+											<li class="green active" title="Green"></li>
+											<li class="blue" title="Blue"></li>
+											<li class="aero" title="Aero"></li>
+											<li class="grey" title="Grey"></li>
+											<li class="orange" title="Orange"></li>
+											<li class="yellow" title="Yellow"></li>
+											<li class="pink" title="Pink"></li>
+											<li class="purple" title="Purple"></li>
+										</ul>
+									</div>
+								</div>
+								<div class="skin-section skin-states">
+									<h4>状态</h4>
+									<ul class="list">
+										<li>
+											<div class="state icheckbox_square-green"></div>
+											<div class="state iradio_square-green"></div>
+											Normal
+										</li>
+										<li>
+											<div class="state icheckbox_square-green hover"></div>
+											<div class="state iradio_square-green hover"></div>
+											Hover
+										</li>
+										<li>
+											<div class="state icheckbox_square-green checked"></div>
+											<div class="state iradio_square-green checked"></div>
+											Checked
+										</li>
+										<li>
+											<div class="state icheckbox_square-green disabled"></div>
+											<div class="state iradio_square-green disabled"></div>
+											Disabled
+										</li>
+										<li>
+											<div class="state icheckbox_square-green checked disabled"></div>
+											<div class="state iradio_square-green checked disabled"></div>
+											Disabled &amp; checked
+										</li>
+									</ul>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!-- line skin -->
+			<div class="layui-card float-e-margins">
+				<div class="layui-card-header ">
+					<h5>Line skin</h5>
+					<div class="card-tools">
+						<a class="collapse-link">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+
+						<a class="close-link">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="layui-card-body">
+					<div class="skin skin-line">
+						<dl class="clear">
+							<dd class="selected">
+								<div class="skin-section">
+									<h4>演示</h4>
+									<ul class="list">
+										<li>
+											<input tabindex="17" type="checkbox" id="line-checkbox-1">
+											<label for="line-checkbox-1">Checkbox 1</label>
+										</li>
+										<li>
+											<input tabindex="18" type="checkbox" id="line-checkbox-2" checked>
+											<label for="line-checkbox-2">Checkbox 2</label>
+										</li>
+										<li>
+											<input type="checkbox" id="line-checkbox-disabled" disabled>
+											<label for="line-checkbox-disabled">Disabled</label>
+										</li>
+										<li>
+											<input type="checkbox" id="line-checkbox-disabled-checked" checked disabled>
+											<label for="line-checkbox-disabled-checked">Disabled &amp; checked</label>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<input tabindex="19" type="radio" id="line-radio-1" name="line-radio">
+											<label for="line-radio-1">Radio button 1</label>
+										</li>
+										<li>
+											<input tabindex="20" type="radio" id="line-radio-2" name="line-radio" checked>
+											<label for="line-radio-2">Radio button 2</label>
+										</li>
+										<li>
+											<input type="radio" id="line-radio-disabled" disabled>
+											<label for="line-radio-disabled">Disabled</label>
+										</li>
+										<li>
+											<input type="radio" id="line-radio-disabled-checked" checked disabled>
+											<label for="line-radio-disabled-checked">Disabled &amp; checked</label>
+										</li>
+									</ul>
+									<div class="colors clear">
+										<strong>Color schemes</strong>
+										<ul>
+											<li title="Black"></li>
+											<li class="red" title="Red"></li>
+											<li class="green" title="Green"></li>
+											<li class="blue active" title="Blue"></li>
+											<li class="aero" title="Aero"></li>
+											<li class="grey" title="Grey"></li>
+											<li class="orange" title="Orange"></li>
+											<li class="yellow" title="Yellow"></li>
+											<li class="pink" title="Pink"></li>
+											<li class="purple" title="Purple"></li>
+										</ul>
+									</div>
+								</div>
+								<div class="skin-section skin-states">
+									<h4>状态</h4>
+									<ul class="list">
+										<li>
+											<div class="state icheckbox_line-blue">
+												<div class="icheck_line-icon"></div>
+												Normal
+											</div>
+										</li>
+										<li>
+											<div class="state icheckbox_line-blue hover">
+												<div class="icheck_line-icon"></div>
+												Hover
+											</div>
+										</li>
+										<li>
+											<div class="state icheckbox_line-blue checked">
+												<div class="icheck_line-icon"></div>
+												Checked
+											</div>
+										</li>
+										<li>
+											<div class="state icheckbox_line-blue disabled">
+												<div class="icheck_line-icon"></div>
+												Disabled
+											</div>
+										</li>
+										<li>
+											<div class="state icheckbox_line-blue checked disabled">
+												<div class="icheck_line-icon"></div>
+												Disabled &amp; checked
+											</div>
+										</li>
+									</ul>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!-- futurico skin -->
+			<div class="layui-card float-e-margins">
+				<div class="layui-card-header ">
+					<h5>futurico skin</h5>
+					<div class="card-tools">
+						<a class="collapse-link">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+
+						<a class="close-link">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="layui-card-body">
+					<div class="skin skin-futurico">
+						<dl class="clear">
+							<dd class="selected">
+								<div class="skin-section">
+									<h4>演示</h4>
+									<ul class="list">
+										<li>
+											<input tabindex="25" type="checkbox" id="futurico-checkbox-1">
+											<label for="futurico-checkbox-1">Checkbox 1</label>
+										</li>
+										<li>
+											<input tabindex="26" type="checkbox" id="futurico-checkbox-2" checked>
+											<label for="futurico-checkbox-2">Checkbox 2</label>
+										</li>
+										<li>
+											<input type="checkbox" id="futurico-checkbox-disabled" disabled>
+											<label for="futurico-checkbox-disabled">Disabled</label>
+										</li>
+										<li>
+											<input type="checkbox" id="futurico-checkbox-disabled-checked" checked disabled>
+											<label for="futurico-checkbox-disabled-checked">Disabled &amp; checked</label>
+										</li>
+									</ul>
+									<ul class="list">
+										<li>
+											<input tabindex="27" type="radio" id="futurico-radio-1" name="futurico-radio">
+											<label for="futurico-radio-1">Radio button 1</label>
+										</li>
+										<li>
+											<input tabindex="28" type="radio" id="futurico-radio-2" name="futurico-radio" checked>
+											<label for="futurico-radio-2">Radio button 2</label>
+										</li>
+										<li>
+											<input type="radio" id="futurico-radio-disabled" disabled>
+											<label for="futurico-radio-disabled">Disabled</label>
+										</li>
+										<li>
+											<input type="radio" id="futurico-radio-disabled-checked" checked disabled>
+											<label for="futurico-radio-disabled-checked">Disabled &amp; checked</label>
+										</li>
+									</ul>
+								</div>
+								<div class="skin-section skin-states">
+									<h4>状态</h4>
+									<ul class="list">
+										<li>
+											<div class="state icheckbox_futurico"></div>
+											<div class="state iradio_futurico"></div>
+											Normal
+										</li>
+										<li>
+											<div class="state icheckbox_futurico checked"></div>
+											<div class="state iradio_futurico checked"></div>
+											Checked
+										</li>
+										<li>
+											<div class="state icheckbox_futurico disabled"></div>
+											<div class="state iradio_futurico disabled"></div>
+											Disabled
+										</li>
+										<li>
+											<div class="state icheckbox_futurico checked disabled"></div>
+											<div class="state iradio_futurico checked disabled"></div>
+											Disabled &amp; checked
+										</li>
+									</ul>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div>

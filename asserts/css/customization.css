@@ -358,6 +358,11 @@ nav.page-tabs .page-tabs-content {
     background-color: #999;
 }
 
+/*通用包装样式*/
+.wrapper.wrapper-content {
+    padding: 20px
+}
+
 /* 通用边距浮动 */
 .ptb15{
 	padding-top:15px!important;
