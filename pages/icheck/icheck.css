@@ -9,7 +9,7 @@
 .card-tools a {cursor: pointer;margin-left: 5px;color: #c4c4c4}
 
 .alert-warning {color: #8a6d3b;background-color: #fcf8e3;border-color: #faebcc;}
-.alert {padding: 15px;margin-bottom: 20px;border: 1px solid transparent;border-radius: 4px;}
+.alert {padding: 15px;margin-bottom: 10px;border: 1px solid transparent;border-radius: 4px;}
 
 .clear{position:relative;*zoom:1;}
 .clear:before,.clear:after{content:'';display:table;clear:both}

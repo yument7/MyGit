@@ -21,6 +21,7 @@ require.config({
 		highcharts3d: 'highcharts/highcharts-3d',
 		fancybox: 'fancybox/dist/js/jquery.fancybox',
 		icheck:'icheck/icheck.min',
+		select2:'select2/dist/js/select2.min',
 		'../jquery.validate': 'jquery-validation/dist/jquery.validate',
 		jqueryValidationZh: 'jquery-validation/dist/localization/messages_zh',
 		text: 'requirejs-text/text',
@@ -50,6 +51,11 @@ require.config({
 		},
 		icheck:{
 			deps:['jquery','css!../node_modules/icheck/skins/all']
+		},
+		select2:{
+			deps:['css!../node_modules/select2/dist/css/select2.min.css',
+				  'css!../node_modules/select2-bootstrap-theme/dist/select2-bootstrap.min.css',
+				  'css!../node_modules/select2-Flat_Theme/dist/select2-flat-theme.min.css']
 		}
 	}
 });

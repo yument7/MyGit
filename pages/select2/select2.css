@@ -1,0 +1,13 @@
+.alert-warning {color: #8a6d3b;background-color: #fcf8e3;border-color: #faebcc;}
+.alert {padding: 15px;margin-bottom: 10px;border: 1px solid transparent;border-radius: 4px;}
+
+.demo{flex: 1;box-sizing: border-box;margin-left: 15px;}
+.demo:first-child{margin-left: 0;}
+
+.layui-card-header h5 {display: inline-block;margin: 0 0 7px;padding: 0;text-overflow: ellipsis;float: left;font-weight: 600;}
+.card-tools{display: inline-block;float: right;margin-top: 0;position: relative;padding: 0;}
+.card-tools a{cursor: pointer;margin-left: 5px;color: #c4c4c4;}
+
+.sec-title{background: #FAEBCC;}
+.sec-title p{line-height: 30px;}
+.sec-content{padding: 5px 0 10px 0;}
