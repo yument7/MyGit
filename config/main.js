@@ -21,7 +21,10 @@ require.config({
 		highcharts3d: 'highcharts/highcharts-3d',
 		fancybox: 'fancybox/dist/js/jquery.fancybox',
 		icheck:'icheck/icheck.min',
-		select2:'select2/dist/js/select2.min',
+		select2:'select2/dist/js/select2.full.min',
+		bootstrap:'bootstrap/dist/js/bootstrap.bundle.min',
+		bootstrapTable:'bootstrap-table/dist/bootstrap-table.min',
+		jstree:'jstree/dist/jstree.min',
 		'../jquery.validate': 'jquery-validation/dist/jquery.validate',
 		jqueryValidationZh: 'jquery-validation/dist/localization/messages_zh',
 		text: 'requirejs-text/text',
@@ -56,6 +59,17 @@ require.config({
 			deps:['css!../node_modules/select2/dist/css/select2.min.css',
 				  'css!../node_modules/select2-bootstrap-theme/dist/select2-bootstrap.min.css',
 				  'css!../node_modules/select2-Flat_Theme/dist/select2-flat-theme.min.css']
+		},
+		bootstrap:{
+			deps:['jquery']
+		},
+		bootstrapTable:{
+			deps:['css!../node_modules/bootstrap-table/dist/bootstrap-table.min.css',
+				  'css!../node_modules/bootstrap/dist/css/bootstrap.min.css'
+			    ]
+		},
+		jstree:{
+			deps:['css!../node_modules/jstree/dist/themes/default/style.min.css']
 		}
 	}
 });

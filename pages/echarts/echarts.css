@@ -1,41 +1,26 @@
-.my-title{
-	padding-top: 5px;
+.echarts {
+	height: 240px;
 }
 
-.my-title h3{
-	font-weight: 600;
-	
-}
-.echarts {
-    height: 240px;
-}
-.layui-card-header h5 {
-    display: inline-block;
-    /*font-size: 14px;*/
-    margin: 0 0 7px;
-    padding: 0;
-    text-overflow: ellipsis;
-    float: left;
-    font-weight: 600;
-}
-.box-content p{
+.box-content p {
 	line-height: 1.75;
 }
-.box-content p>a{
+
+.box-content p>a {
 	font-style: italic;
-	color:#0366D6;
+	color: #0366D6;
 }
 
 .ibox-tools {
-    display: inline-block;
-    float: right;
-    margin-top: 0;
-    position: relative;
-    padding: 0
+	display: inline-block;
+	float: right;
+	margin-top: 0;
+	position: relative;
+	padding: 0
 }
 
 .ibox-tools a {
-    cursor: pointer;
-    margin-left: 5px;
-    color: #c4c4c4
+	cursor: pointer;
+	margin-left: 5px;
+	color: #c4c4c4
 }

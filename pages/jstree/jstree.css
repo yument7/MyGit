@@ -1,0 +1,95 @@
+.alert-warning {
+	color: #8a6d3b;
+	background-color: #fcf8e3;
+	border-color: #faebcc;
+}
+
+.alert {
+	padding: 15px;
+	margin-bottom: 10px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.link-color {
+	color: #0E9AEF;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.card-tools {
+	display: inline-block;
+	float: right;
+	margin-top: 0;
+	position: relative;
+	padding: 0
+}
+
+.card-tools a {
+	cursor: pointer;
+	margin-left: 5px;
+	color: #c4c4c4
+}
+
+.my-title {
+	padding-top: 5px;
+}
+
+.demo {
+	flex: 1;
+	box-sizing: border-box;
+	margin-left: 15px;
+}
+
+.demo:first-child {
+	margin-left: 0;
+}
+
+.pl-ent {
+	color: #22863a;
+}
+
+.pl-e,
+.pl-en {
+	color: #6f42c1;
+}
+
+.pl-pds,
+.pl-s,
+.pl-s .pl-pse .pl-s1,
+.pl-sr,
+.pl-sr .pl-cce,
+.pl-sr .pl-sra,
+.pl-sr .pl-sre {
+	color: #032f62;
+}
+
+.pl-k {
+	color: #d73a49;
+}
+
+.flex-section {
+	display: flex;
+}
+
+.flex-box {
+	flex: 1;
+}
+
+.jstree-pre {
+	line-height: 1.1;
+}
+
+.tree-example{
+	display: inline-block;
+}
+
+label{
+	display: inline-block;
+	color: #0E76A8;
+	vertical-align: top;
+}
+
+.html-code{
+	border-bottom: 1px dashed #E2E3E3;
+}
