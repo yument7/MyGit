@@ -4,7 +4,7 @@
 			<div class="layui-card">
 				<div class="layui-card-header my-title">
 					<span>
-                		<h3>Select2</h3>
+                		<h3>jstree</h3>
                 	</span>
 				</div>
 				<div class="layui-card-body">
@@ -105,18 +105,20 @@
 	<!--  -->						<label>Code：</label>			
 <pre class="jstree-pre">&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>container<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
 &lt;<span class="pl-ent">script</span>&gt;<span class="pl-s1"></span>
-<span class="pl-s1"><span class="pl-en">$</span>(<span class="pl-k">function</span>() {</span>
+<span class="pl-s1"><span class="pl-en">$</span>(<span class="pl-k">function</span>(){</span>
 <span class="pl-s1">  <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>#container<span class="pl-pds">'</span></span>).<span class="pl-en">jstree</span>({</span>
-<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">'</span>core<span class="pl-pds">'</span></span> <span class="pl-k">:</span> {</span>
-<span class="pl-s1">      <span class="pl-s"><span class="pl-pds">'</span>data<span class="pl-pds">'</span></span> <span class="pl-k">:</span> [</span>
-<span class="pl-s1">        { <span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>System<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>children<span class="pl-pds">"</span></span> <span class="pl-k">:</span> [</span>
-<span class="pl-s1">            { <span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>apache<span class="pl-pds">"</span></span> },</span>
-<span class="pl-s1">            { <span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>nginx<span class="pl-pds">"</span></span> }</span>
+<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">'</span>core<span class="pl-pds">'</span></span><span class="pl-k">:</span>{</span>
+<span class="pl-s1">      <span class="pl-s"><span class="pl-pds">'</span>data<span class="pl-pds">'</span></span><span class="pl-k">:</span>[</span>
+<span class="pl-s1">        {<span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>System<span class="pl-pds">"</span></span>, 
+<span class="pl-s">         <span class="pl-pds">"</span>children<span class="pl-pds">"</span></span><span class="pl-k">:</span>[</span>
+<span class="pl-s1">            {<span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>apache<span class="pl-pds">"</span></span>},</span>
+<span class="pl-s1">            {<span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>nginx<span class="pl-pds">"</span></span>}</span>
 <span class="pl-s1">          ]</span>
 <span class="pl-s1">        },</span>
-<span class="pl-s1">        { <span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Tools<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>children<span class="pl-pds">"</span></span> <span class="pl-k">:</span> [</span>
-<span class="pl-s1">            { <span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Idea<span class="pl-pds">"</span></span> },</span>
-<span class="pl-s1">            { <span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>eclipse<span class="pl-pds">"</span></span> }</span>
+<span class="pl-s1">        {<span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>Tools<span class="pl-pds">"</span></span>, 
+<span class="pl-s">         <span class="pl-pds">"</span>children<span class="pl-pds">"</span></span> <span class="pl-k">:</span>[</span>
+<span class="pl-s1">            {<span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>Idea<span class="pl-pds">"</span></span>},</span>
+<span class="pl-s1">            {<span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>eclipse<span class="pl-pds">"</span></span>}</span>
 <span class="pl-s1">          ]</span>
 <span class="pl-s1">        }</span>
 <span class="pl-s1">      ]</span>
@@ -132,21 +134,20 @@
 									<label>Code：</label>
 <pre class="jstree-pre">&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>container<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
 &lt;<span class="pl-ent">script</span>&gt;<span class="pl-s1"></span>
-<span class="pl-s1"><span class="pl-en">$</span>(<span class="pl-k">function</span>() {</span>
+<span class="pl-s1"><span class="pl-en">$</span>(<span class="pl-k">function</span>(){</span>
 <span class="pl-s1">  <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>#container<span class="pl-pds">'</span></span>).<span class="pl-en">jstree</span>({</span>
-<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">'</span>core<span class="pl-pds">'</span></span> <span class="pl-k">:</span> {</span>
-<span class="pl-s1">      <span class="pl-s"><span class="pl-pds">'</span>data<span class="pl-pds">'</span></span> <span class="pl-k">:</span> [</span>
-<span class="pl-s1">          {</span>
-<span class="pl-s1">              <span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>工作目录<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1">              <span class="pl-s"><span class="pl-pds">"</span>state<span class="pl-pds">"</span></span> <span class="pl-k">:</span> {<span class="pl-s"><span class="pl-pds">"</span>opened<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-c1">true</span> },</span>
-<span class="pl-s1">              <span class="pl-s"><span class="pl-pds">"</span>children<span class="pl-pds">"</span></span> <span class="pl-k">:</span> [</span>
-<span class="pl-s1">                  {</span>
-<span class="pl-s1">                    <span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>器件模型<span class="pl-pds">"</span></span>,</span>
-<span class="pl-s1">                    <span class="pl-s"><span class="pl-pds">"</span>state<span class="pl-pds">"</span></span> <span class="pl-k">:</span> { <span class="pl-s"><span class="pl-pds">"</span>selected<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-c1">true</span> },</span>
-<span class="pl-s1">                    <span class="pl-s"><span class="pl-pds">"</span>icon<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>fa fa-folder pl-e<span class="pl-pds">"</span></span></span>
-<span class="pl-s1">                  },</span>
-<span class="pl-s1">                  { <span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>开发文档<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>state<span class="pl-pds">"</span></span> <span class="pl-k">:</span> { <span class="pl-s"><span class="pl-pds">"</span>disabled<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-c1">true</span> } }</span>
-<span class="pl-s1">              ]</span>
+<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">'</span>core<span class="pl-pds">'</span></span><span class="pl-k">:</span>{</span>
+<span class="pl-s1">      <span class="pl-s"><span class="pl-pds">'</span>data<span class="pl-pds">'</span></span><span class="pl-k">:</span>[{</span>
+<span class="pl-s1">         <span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>工作目录<span class="pl-pds">"</span></span>,</span>
+<span class="pl-s1">         <span class="pl-s"><span class="pl-pds">"</span>state<span class="pl-pds">"</span></span><span class="pl-k">:</span>{<span class="pl-s"><span class="pl-pds">"</span>opened<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-c1">true</span>},</span>
+<span class="pl-s1">         <span class="pl-s"><span class="pl-pds">"</span>children<span class="pl-pds">"</span></span><span class="pl-k">:</span>[{</span>
+<span class="pl-s1">            <span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>器件模型<span class="pl-pds">"</span></span>,</span>
+<span class="pl-s1">            <span class="pl-s"><span class="pl-pds">"</span>state<span class="pl-pds">"</span></span><span class="pl-k">:</span>{<span class="pl-s"><span class="pl-pds">"</span>selected<span class="pl-pds">"</span></span> <span class="pl-k">:</span><span class="pl-c1">true</span>},</span>
+<span class="pl-s1">            <span class="pl-s"><span class="pl-pds">"</span>icon<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>fa fa-folder pl-e<span class="pl-pds">"</span></span></span>
+<span class="pl-s1">            },</span>
+<span class="pl-s1">            {<span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>开发文档<span class="pl-pds">"</span></span>, 
+<span class="pl-s">             <span class="pl-pds">"</span>state<span class="pl-pds">"</span></span><span class="pl-k">:</span>{<span class="pl-s"><span class="pl-pds">"</span>disabled<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-c1">true</span>}</span>
+<span class="pl-s1">          }]</span>
 <span class="pl-s1">        }</span>
 <span class="pl-s1">      ]</span>
 <span class="pl-s1">    }</span>
@@ -158,10 +159,10 @@
 							</div>
 						</div>
 						<div class="flex-section">
-							<div>
+							<div class="tree-attr">
 								<label>节点属性</label>
 								<dl>
-									<dd>text</dd>
+									<dd id="attr-text">text</dd>
 									<dd>id</dd>
 									<dd>state</dd>
 									<dd>icon</dd>
@@ -180,7 +181,7 @@
 		<div class="layui-col-sm6 plb1015">
 			<div class="layui-card float-e-margins">
 				<div class="layui-card-header">
-					<h5>DataSources</h5>
+					<h5>Using AJAX</h5>
 					<div class="card-tools">
 						<a class="collapse-link">
 							<i class="fa fa-chevron-up"></i>
@@ -192,14 +193,63 @@
 				</div>
 				<div class="layui-card-body">
 					<section>
-						<div></div>
-						<div id="container3"></div>
+						<div class="flex-section">
+							<div class="flex-box">
+								<div class="pb10">
+									<label>示例：</label>
+									<div id="container3" class="tree-example"></div>
+								</div>
+							</div>
+							<div class="flex-box">
+								<div class="pb10">
+									<label>LAZY示例：</label>
+									<div id="container4" class="tree-example"></div>
+								</div>
+							</div>
+						</div>
+						<div class="flex-section">
+							<div class="flex-box">
+								<div class="pb10">
+	<!--  -->						<label>Code：</label>			
+<pre><span class="pl-s1"><span class="pl-en">$</span>(<span class="pl-k">function</span>(){</span>
+<span class="pl-s1">  <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>#container<span class="pl-pds">'</span></span>).<span class="pl-en">jstree</span>({</span>
+<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">'</span>core<span class="pl-pds">'</span></span><span class="pl-k">:</span>{</span>
+<span class="pl-s1">      <span class="pl-s"><span class="pl-pds">'</span>data<span class="pl-pds">'</span></span><span class="pl-k">:</span>{</span>
+<span class="pl-s1">        <span class="pl-s"><span class="pl-pds">"</span>url<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>./data.json<span class="pl-pds">"</span></span>,</span>
+<span class="pl-s1">        <span class="pl-s"><span class="pl-pds">"</span>dataType<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>json<span class="pl-pds">"</span></span></span>
+<span class="pl-s1">      }</span>
+<span class="pl-s1">    }</span>
+<span class="pl-s1">  });</span>
+<span class="pl-s1">});</span></pre>
+	<!--  -->						
+								</div>
+							</div>
+							<div class="flex-box">
+								<div class="pb10">
+									<label>Code：</label>
+	<!--  -->		
+<pre><span class="pl-s1"><span class="pl-en">$</span>(<span class="pl-k">function</span>() {</span>
+<span class="pl-s1">  <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>#container<span class="pl-pds">'</span></span>).<span class="pl-en">jstree</span>({</span>
+<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">'</span>core<span class="pl-pds">'</span></span><span class="pl-k">:</span>{</span>
+<span class="pl-s1">      <span class="pl-s"><span class="pl-pds">'</span>data<span class="pl-pds">'</span></span><span class="pl-k">:</span>{</span>
+<span class="pl-s1">        <span class="pl-s"><span class="pl-pds">"</span>url<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>./data.json?lazy<span class="pl-pds">"</span></span>,</span>
+<span class="pl-s1">        <span class="pl-s"><span class="pl-pds">"</span><span class="pl-en">data</span><span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-k">function</span> (<span class="pl-smi">node</span>){</span>
+<span class="pl-s1">          <span class="pl-k">return</span> {<span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-smi">node</span>.<span class="pl-c1">id</span>};</span>
+<span class="pl-s1">        }</span>
+<span class="pl-s1">      }</span>
+<span class="pl-s1">    }</span>
+<span class="pl-s1">  });</span>
+<span class="pl-s1">});</span></pre>	
+	<!--  -->
+								</div>
+							</div>
+						</div>
 					</section>
 				</div>
 			</div>
 			<div class="layui-card float-e-margins">
 				<div class="layui-card-header">
-					<h5>Selections</h5>
+					<h5>Other Usings</h5>
 					<div class="card-tools">
 						<a class="collapse-link">
 							<i class="fa fa-chevron-up"></i>
@@ -211,7 +261,47 @@
 				</div>
 				<div class="layui-card-body">
 					<section>
-
+						<div class="flex-section html-code">
+							<div class="flex-box">
+								<div class="pb10">
+									<div class="event-using">
+										<label>事件响应示例：</label>
+										<div id="container5" class="tree-example-event"></div>
+									</div>
+									<div class="event-using">
+										<label>响应结果：</label>
+										<div>
+											<p id="result1" style="height: 24px;"></p>
+											<p id="result2" style="height: 24px;"></p>
+										</div>
+									</div>
+									
+									
+								</div>
+							</div>
+							<div class="flex-box">
+								<div class="pb10">
+									<div class="pb10">
+										<label>Instance响应示例：</label>
+									</div>
+									<div>
+										<button id="tree-toggle" class="layui-btn layui-btn-normal" style="vertical-align: top;">切换选择</button>
+										<div id="container6" class="tree-example"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flex-section">
+							<div class="flex-box">
+								<div class="ptb10">
+									<label>插件checkbox示例：</label>
+									<div id="container7" class="tree-example-event"></div>
+								</div>
+							</div>
+							<div class="flex-box">
+								
+							</div>
+						</div>
 					</section>
 				</div>
 			</div>

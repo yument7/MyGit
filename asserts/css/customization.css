@@ -427,6 +427,11 @@ nav.page-tabs .page-tabs-content {
 
 /* 通用边距浮动 */
 
+.ptb10 {
+	padding-top: 10px!important;
+	padding-bottom: 10px!important;
+}
+
 .ptb15 {
 	padding-top: 15px!important;
 	padding-bottom: 15px!important;

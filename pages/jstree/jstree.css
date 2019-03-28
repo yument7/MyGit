@@ -45,6 +45,10 @@
 	margin-left: 0;
 }
 
+pre{
+	font-family: "lucida console";
+}
+
 .pl-ent {
 	color: #22863a;
 }
@@ -83,6 +87,9 @@
 .tree-example{
 	display: inline-block;
 }
+.tree-example-event{
+	margin-left: 20px;
+}
 
 label{
 	display: inline-block;
@@ -92,4 +99,30 @@ label{
 
 .html-code{
 	border-bottom: 1px dashed #E2E3E3;
+}
+
+.tree-attr{
+	padding: 10px 0;
+}
+
+.tree-attr dl{
+	padding-top: 5px;
+}
+
+.tree-attr dl dd{
+	display: inline-block;
+	padding:0px 10px;
+	line-height: 30px;
+	background: #FFE4B5;
+	border-radius: 1px;
+	color:#333;
+	margin-right: 12px;
+	cursor: pointer;
+}
+
+.event-using{
+	display: inline-block;
+	width: 48%;
+	box-sizing: border-box;
+	vertical-align: top;
 }
