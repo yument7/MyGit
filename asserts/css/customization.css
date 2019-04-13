@@ -31,29 +31,15 @@ p {
 	margin: 0!important;
 }
 
-.layui-card-header {
-	box-sizing: content-box;
-}
-
-.my-title {
-	padding-top: 5px;
-}
-
-.layui-card-header h5 {
-	display: inline-block;
-	margin: 0 0 7px;
-	padding: 0;
-	text-overflow: ellipsis;
-	float: left;
-}
-
 .layui-side-self {
 	background: #2f4050;
 	width: 220px!important;
+	transition: width 0.5s ease-in-out;
 }
 
 .layui-main-self {
 	left: 220px!important;
+	transition: width 0.5s ease-in-out;
 }
 
 .layui-mybg {
@@ -132,9 +118,6 @@ body.mini-sidebar .metismenu .has-arrow::after {
 }
 
 .sidebar-nav .metismenu>li {
-	/*-webkit-box-flex: 1;
-    -ms-flex: 1 1 0%;
-    flex: 1 1 0%;*/
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -187,218 +170,110 @@ body.mini-sidebar .metismenu .has-arrow::after {
 	color: #fff!important;
 }
 
-
 /*主题选项卡*/
-
-.content-tabs {
+.content-head {
 	position: relative;
 	height: 40px;
-	background: #fafafa;
 	line-height: 40px;
 	box-sizing: content-box;
 	border-bottom: solid 2px #2f4050;
 }
 
-.content-tabs .roll-nav,
-.page-tabs-list {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	text-align: center;
-	color: #999;
-	z-index: 2;
-	top: 0
-}
-
-.content-tabs .roll-left {
-	left: 0px;
-	border-right: solid 1px #ddd;
-}
-
-.content-tabs .J_tabLeft {
-	left: 40px;
-}
-
-.content-tabs .roll-right {
-	right: 0;
-	border-left: solid 1px #E5E5E5;
-}
-
-.content-tabs .J_tabRight {
-	right: 91px;
-}
-
-.content-tabs button {
-	background: #fff;
-	border: 0;
-	height: 40px;
-	width: 40px;
-	outline: 0
-}
-
-.content-tabs button:hover {
-	background: #fafafa;
-}
-
-nav.page-tabs {
-	margin-left: 80px;
-	width: 100000px;
-	height: 40px;
+.menu-toggle{
+	float:left;
 	overflow: hidden;
-	position: relative;
-	/*padding-left: 100px;*/
+	
 }
 
-nav.page-tabs .page-tabs-content {
-	float: left;
-	margin-left: 100px;
-}
-
-.fixed-tabs {
-	width: 100px;
-	float: left;
-}
-
-.fixedTab {
-	width: 100px;
-	box-sizing: border-box;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 100;
-	float: none!important;
-	background: #fff;
-}
-
-.page-tabs .fixedTab:hover {
-	color: #EE7600;
-	background: #DEDEDE;
-	cursor: pointer;
-}
-
-.page-tabs .page-tabs-content a {
+.menu-toggle a{
 	display: block;
-	float: left;
-	border-right: solid 1px #ddd;
-	padding: 0 15px;
-	color: #473C8B;
-}
-
-.page-tabs a i {
-	color: #ccc;
-}
-
-.page-tabs a i:hover {
-	color: #c00;
-}
-
-.page-tabs a.active {
-	background: #2f4050;
-	color: #FFEBCD;
-}
-
-.page-tabs a.active i:hover,
-.page-tabs a.active:hover {
-	background: #293846;
-	color: #FF8C00;
-}
-
-.content-tabs .roll-nav:hover,
-.page-tabs-content a:hover {
-	color: #EE7600;
-	background: #DEDEDE;
-	cursor: pointer;
-}
-
-.roll-right.btn-group {
-	width: 90px;
-	padding: 0;
-}
-
-.roll-right.J_tabExit {
-	background: #fff;
 	height: 40px;
-	width: 60px;
-	outline: 0;
-}
-
-.roll-right .tabs-close {
-	position: relative;
-	display: block;
-	box-sizing: border-box;
-	background-color: #fff;
-}
-
-.roll-right .tabs-close li {
-	display: block;
-	position: relative;
-}
-
-.roll-right .tabs-close li>a {
-	display: block;
-	box-sizing: border-box;
-	padding-right: 25px;
-	text-align: right;
-	color: #666;
-}
-
-.roll-right .tabs-close li>a:hover {
-	background: #DEDEDE;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #fafafa;
 	cursor: pointer;
+	box-sizing: border-box;
+	border-right: 1px solid #ddd;
 }
 
-.roll-right .tabs-close li>a>span:hover {
-	color: #EE7600;
+.menu-toggle a>i{
+	font-size: 14px;
+    color: #999;
+    line-height: 40px;
 }
 
-.roll-right .tabs-close li>a>span {
-	position: absolute;
-	font-size: 16px;
-	right: 10px;
-	top: 12px;
-	color: #999;
+.content-tabs {
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	width: calc(100% - 40px);
 }
-
-.roll-right dl.tabs-close-child {
-	display: none;
-	position: absolute;
-	right: 0;
-	top: 42px;
-	width: 129px;
-	line-height: 36px;
-	padding: 5px 0;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, .12);
-	border-left: 1px solid #d2d2d2;
-	border-right: 1px solid #d2d2d2;
-	border-bottom: 1px solid #d2d2d2;
-	background-color: #fff;
-	z-index: 100;
-	border-radius: 0 0 2px 2px;
-	white-space: nowrap;
-	transition: all 0.5s;
-}
-
-.roll-right dl>dd {
-	padding: 0 8px;
-}
-
-.roll-right dl>dd>a:hover {
-	color: #EE7600;
-	cursor: pointer;
-}
-
-.roll-right dl>dd:first-child {
-	border-bottom: 1px solid #E5E5E5;
-}
-
 
 /* 主题内容  */
-
 #content-main {
 	height: calc(100% - 42px);
 	overflow: auto;
 	position: relative;
 	background: #EBEBED;
+}
+
+.layui-card-header{
+	box-sizing: content-box;
+	border-bottom:1px solid #DFE4ED!important;
+}
+
+.my-title {
+	padding-top: 5px!important;
+}
+
+.layui-card-header h5 {
+	display: inline-block;
+	margin: 0 0 7px;
+	padding: 0;
+	text-overflow: ellipsis;
+	float: left;
+}
+
+.card-tools {
+	display: inline-block;
+	float: right;
+	margin-top: 0;
+	position: relative;
+	padding: 0
+}
+
+.card-tools a {
+	cursor: pointer;
+	margin-left: 5px;
+	color: #c4c4c4!important;
+}
+
+.layui-card-body a:hover{
+	cursor: pointer;
+	color:#0366D6;
+}
+
+.border-btm-purple{
+	border-bottom: 4px solid #8470FF!important;
+}
+
+.border-btm-orange{
+	border-bottom: 4px solid #ff6500!important;
+}
+
+.border-btm-black{
+	border-bottom: 4px solid #142534!important;
+}
+
+.border-btm-green{
+	border-bottom: 4px solid #228B22!important;
+}
+
+.border-btm-yellow{
+	border-bottom: 4px solid #FFD700!important;
 }
 
 
@@ -417,16 +292,12 @@ nav.page-tabs .page-tabs-content {
 	background-color: #999;
 }
 
-
 /*通用包装样式*/
-
 .wrapper.wrapper-content {
 	padding: 20px
 }
 
-
 /* 通用边距浮动 */
-
 .ptb10 {
 	padding-top: 10px!important;
 	padding-bottom: 10px!important;

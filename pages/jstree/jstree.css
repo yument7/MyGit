@@ -17,24 +17,6 @@
 	cursor: pointer;
 }
 
-.card-tools {
-	display: inline-block;
-	float: right;
-	margin-top: 0;
-	position: relative;
-	padding: 0
-}
-
-.card-tools a {
-	cursor: pointer;
-	margin-left: 5px;
-	color: #c4c4c4
-}
-
-.my-title {
-	padding-top: 5px;
-}
-
 .demo {
 	flex: 1;
 	box-sizing: border-box;

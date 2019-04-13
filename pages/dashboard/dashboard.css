@@ -32,26 +32,6 @@
     vertical-align: middle;
 }
 
-.border-btm-purple{
-	border-bottom: 4px solid #8470FF;
-}
-
-.border-btm-orange{
-	border-bottom: 4px solid #ff6500;
-}
-
-.border-btm-black{
-	border-bottom: 4px solid #142534;
-}
-
-.border-btm-green{
-	border-bottom: 4px solid #228B22!important;
-}
-
-.border-btm-yellow{
-	border-bottom: 4px solid #FFD700;
-}
-
 .my-card-body{
 	position: relative;
 	padding-top: 15px;
@@ -63,9 +43,6 @@
 	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
 }
 
-.layui-card-header{
-	border-bottom:1px solid #DFE4ED;
-}
 .layui-card-header dl{
 	position: relative;
 }
@@ -133,11 +110,6 @@ section.box-text dt{
 section.box-text dd{
 	width:calc(100% - 80px);
 	float:left;
-}
-
-.layui-card-body a:hover{
-	cursor: pointer;
-	color:#0366D6;
 }
 
 .icon-red{
