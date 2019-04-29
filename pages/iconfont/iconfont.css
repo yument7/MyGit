@@ -1,0 +1,152 @@
+.step{
+	padding:10px 20px;
+	width:1200px;
+	margin: 10px auto 15px;
+	background: #FFF8DC;
+	border-radius: 2px;
+	box-shadow: 1px 1px 8px 1px #D1DADE;
+}
+
+.step h4{
+	font-weight: 600;
+	font-size: 16px;
+	margin:10px 0 5px;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.step p{
+	text-indent: 2em;
+	line-height: 32px;
+	margin-bottom: 5px!important;
+}
+
+.step img{
+	margin-bottom: 10px;
+}
+
+.iconfont-list {
+    margin-top: 20px;
+}
+
+.iconfont-list .fa-hover a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    color: #222;
+    line-height: 32px;
+    height: 32px;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+
+.iconfont-list .fa-hover a:hover {
+    background-color: #21B9BB;
+    color: #fff;
+    text-decoration: none;
+}
+
+.iconfont-list .fa-hover a .iconfont {
+    width: 32px;
+    font-size: 16px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px;
+    color:#0D8DDB;
+}
+
+.iconfont-list .fa-hover a:hover .iconfont{
+	font-size:28px;
+	vertical-align:-6px;
+	color:#FFFAED;
+}
+
+.iconfont-list .icon-hover a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    color: #222;
+    line-height: 42px;
+    height: 42px;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+
+.iconfont-list .icon-hover a:hover {
+    background-color: #21B9BB;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.iconfont-list .icon-hover a .icon {
+  width: 32px;
+  height: 28px;
+  vertical-align: -8px;
+  fill: currentColor;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.text-muted {
+    color: #b3b3b3;
+}
+
+.iconfont-list .fa-hover a:hover .text-muted{
+	color:#bbe2d5;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 25px 0 15px;
+    border-bottom: 1px solid #e9e9e9;
+    font-size: 1.25em;
+}
+
+.page-header:first-child{
+	margin-top: 20px;
+}
+
+.container-last{
+	margin-bottom: 30px;
+}
+
+pre {
+    padding: 5px 15px 5px 5px;
+    white-space: nowrap;
+}
+
+pre code {
+    padding: 0;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 0;
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    
+}
+
+.nt {
+    color: #2f6f9f;
+}
+
+.na {
+    color: #4f9fcf;
+}
+
+.s {
+    color: #d44950;
+}
+
+[role=button] {
+    cursor: pointer;
+}
+
+.btn-clipboard2{
+	color: #21b384;
+}
+
+.btn-clipboard2:hover{
+	color:#229B22;
+}
+

@@ -1,0 +1,97 @@
+.fontawesome-icon-list {
+    margin-top: 20px;
+}
+
+.fontawesome-icon-list .fa-hover a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    color: #222;
+    line-height: 32px;
+    height: 32px;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+
+.fontawesome-icon-list .fa-hover a:hover {
+    background-color: #1d9d74;
+    color: #fff;
+    text-decoration: none;
+}
+
+.fontawesome-icon-list .fa-hover a .fa {
+    width: 32px;
+    font-size: 14px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px;
+    color:#0D8DDB;
+}
+
+.fontawesome-icon-list .fa-hover a:hover .fa{
+	font-size:28px;
+	vertical-align:-6px;
+	color:#FFFAED;
+}
+
+.text-muted {
+    color: #b3b3b3;
+}
+
+.fontawesome-icon-list .fa-hover a:hover .text-muted{
+	color:#bbe2d5;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 25px 0 15px;
+    border-bottom: 1px solid #e9e9e9;
+    font-size: 1.25em;
+}
+
+.page-header:first-child{
+	margin-top: 20px;
+}
+
+.container-last{
+	margin-bottom: 30px;
+}
+
+pre {
+    padding: 5px 15px 5px 5px;
+    white-space: nowrap;
+}
+
+pre code {
+    padding: 0;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 0;
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    
+}
+
+.nt {
+    color: #2f6f9f;
+}
+
+.na {
+    color: #4f9fcf;
+}
+
+.s {
+    color: #d44950;
+}
+
+[role=button] {
+    cursor: pointer;
+}
+
+.btn-clipboard2{
+	color: #21b384;
+}
+
+.btn-clipboard2:hover{
+	color:#229B22;
+}

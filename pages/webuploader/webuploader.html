@@ -1,0 +1,62 @@
+<!-- 样式没有隔离，需要加唯一id=webuploader -->
+<div id="webuploader" class="wrapper wrapper-content animated fadeIn" name="文件上传">
+    <div class="layui-row">
+        <div class="layui-col-sm12 pb15">
+            <div class="layui-card">
+                <div class="layui-card-header my-title">
+                    <h3>
+                        Web Uploader
+                    </h3>
+                </div>
+                <div class="layui-card-body">
+                    <div class="alert alert-warning">
+                    	<p>WebUploader是由Baidu WebFE(FEX)团队开发的一个简单的以HTML5为主，FLASH为辅的现代文件上传组件。在现代的浏览器里面能充分发挥HTML5的优势，同时又不摒弃主流IE浏览器，沿用原来的FLASH运行时，兼容IE6+，iOS 6+, android 4+。两套运行时，同样的调用方式，可供用户任意选用。 采用大文件分片并发上传，极大的提高了文件上传效率。</p>
+                        <p>官方文档及更多示例请参考：</p>
+                        &emsp;&emsp;<a href="http://fex.baidu.com/webuploader/" target="_blank">http://fex.baidu.com/webuploader/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-col-sm12">
+            <div class="layui-card float-e-margins">
+                <div class="layui-card-header">
+                    <h5>百度Web Uploader</h5>
+                    <div class="card-tools">
+						<a class="collapse-link">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+						<a class="close-link">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+                </div>
+                <div class="layui-card-body">
+                    <div class="page-container">
+                        <p>您可以尝试文件拖拽，使用QQ截屏工具，然后激活窗口后粘贴，或者点击添加图片按钮，来体验此demo.</p>
+                        <div id="uploader" class="wu-example">
+                            <div class="queueList">
+                                <div id="dndArea" class="placeholder">
+                                    <div id="filePicker"></div>
+                                    <p>或将照片拖到这里，单次最多可选300张</p>
+                                </div>
+                            </div>
+                            <div class="statusBar" style="display:none;">
+                                <div class="progress">
+                                    <span class="text">0%</span>
+                                    <span class="percentage"></span>
+                                </div>
+                                <div class="info"></div>
+                                <div class="btns">
+                                    <div id="filePicker2"></div>
+                                    <div class="uploadBtn">开始上传</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

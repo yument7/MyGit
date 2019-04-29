@@ -26,10 +26,12 @@ require.config({
 		bootstrap:'bootstrap/dist/js/bootstrap.bundle.min',
 		bootstrapTable:'bootstrap-table/dist/bootstrap-table.min',
 		jstree:'jstree/dist/jstree.min',
+		webuploader:"webuploader/dist/webuploader.min",
 		'../jquery.validate': 'jquery-validation/dist/jquery.validate',
 		jqueryValidationZh: 'jquery-validation/dist/localization/messages_zh',
 		text: 'requirejs-text/text',
-		initial: '../config/initial'
+		initial: '../config/initial',
+		iconfont: '../asserts/css/iconfont/iconfont'
 	},
 	shim: {
 		layui: {
@@ -74,12 +76,15 @@ require.config({
 		},
 		jstree:{
 			deps:['css!../node_modules/jstree/dist/themes/default/style.min.css']
+		},
+		webuploader:{
+			deps:['css!../node_modules/webuploader/dist/webuploader.css']
 		}
 	}
 });
 
 // 框架加载
-require(['jquery', 'layui', 'metisMenu', 'slimscroll', 'tabsMenu'], function() {
+require(['jquery', 'layui', 'metisMenu', 'slimscroll', 'tabsMenu','iconfont'], function() {
 	layui.use(['element', 'layer'], function() {
 		var element = layui.element;
 		var layer = layui.layer;
@@ -93,7 +98,7 @@ window['pages'] = [];
 // 模拟路由
 function router(param) {
 	var reqMoudelName = '../pages/' + param.pageName + '/' + param.pageName;
-	destroyPage();
+	destroyPage(param);
 	initPage(reqMoudelName, param);
 }
 
@@ -125,11 +130,16 @@ function loadPage(reqMoudelName, pageName) {
 }
 
 // 销毁页面
-function destroyPage() {
+function destroyPage(param) {
+	// 卸载掉关于bootstrap的基础基础样式
+	$('link[href*="../node_modules/bootstrap/dist/css/bootstrap.min.css"]').remove();
 	window.pages.forEach(function(item){
 		requirejs.undef(item.reqMoudelName); // 销毁模块 // 依赖的模块不销毁
 		requirejs.undef('require-css/css!' + item.reqMoudelName); // 销毁css
 		$('link[href*="' + item.reqMoudelName + '"]').remove();
 	});
+	if(param.pageName == "bootstrapTable"){
+		$("head").append('<link type="text/css" rel="stylesheet" href="./node_modules/../node_modules/bootstrap/dist/css/bootstrap.min.css">');
+	}
 	window.pages = [];
 }

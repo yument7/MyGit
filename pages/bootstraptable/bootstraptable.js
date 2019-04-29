@@ -80,9 +80,13 @@ $.initTable = function(_columns, _url) {
 		paginationPreText: "<<",
 		paginationNextText: ">>",
 		paginationLastText: "尾页",
-		search: false, // 是否显示搜索框功能
+		search: true, // 是否显示搜索框功能
 		singleSelect: false, // 是否禁止多选
-		iconSize: 'outline', // 图标大小：undefined默认的按钮尺寸 xs超小按钮sm小按钮lg大按钮
+		iconSize: 'undefined', // 图标大小：undefined默认的按钮尺寸 xs超小按钮sm小按钮lg大按钮
+		icons:{
+			refresh: 'fa-refresh',
+			columns: 'fa-th-list',
+		},
 		toolbar: '#tableToolbar', // 指定工作栏
 		//sidePagination: "server",     // 启用服务端分页 
 		showRefresh: true, // 是否显示刷新按钮
