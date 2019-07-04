@@ -823,7 +823,7 @@ define(['highcharts', 'hchartExport', 'highcharts3d', 'hchartMore'], function(Hi
 			});*/
 
 			// 3d 图还不能正常显示
-			require(['highcharts','hchartMore'], function(Highcharts) {
+			require(['highcharts', 'hchartMore'], function(Highcharts) {
 				var opt_h = {
 					chart: {
 						type: 'pie',

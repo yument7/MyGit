@@ -1,69 +1,72 @@
-define(['bootstrap','bootstrapTable'],function(){
+define(['bootstrap', 'bootstrapTable'], function() {
 	queryAccountList();
 });
 
 function queryAccountList() {
 	var columns = [{
-            checkbox: true
-        },
-        {
-            field: 'index',
-            title: '序号',
-            align: 'center',
-            formatter: function (value, row, index) { return index + 1; }
-        },
-        {
-            field: 'platform',
-            title: '平台'
-        },
-        {
-            field: 'website',
-            title: '网址'
-        },
-        {
-            field: 'account',
-            title: '账号'
-        },
-        {
-            field: 'password',
-            title: '密码'
-        },
-        {
-            field: 'siteType',
-            title: '类型'
-        },
-        {
-            field: 'email',
-            title: '注册邮箱'
-        },
-        {
-            field: 'phonenumber',
-            title: '预留手机'
-        },
-        {
-            field: 'createTime',
-            title: '创建时间'
-        },
-        {
-            field: 'updateTime',
-            title: '修改时间'
-        },
-        {
-            field: 'describle',
-            title: '备注'
-        },
-        {
-            title: '操作',
-            align: 'center',
-            formatter: function(value, row, index) {
-            	var actions = [];
-                actions.push('<a class="btn btn-info btn-sm" href="#" title="编辑" onclick="edit(\'' + row.id + '\')"><i class="fa fa-edit"></i></a> ');
-                actions.push('<a class="btn btn-warning btn-sm" href="#" title="删除" onclick="remove(\'' + row.id + '\')"><i class="fa fa-remove"></i></a> ');
-                return actions.join('');
-            }
-        }];
+			checkbox: true
+		},
+		{
+			field: 'index',
+			title: '序号',
+			align: 'center',
+			formatter: function(value, row, index) {
+				return index + 1;
+			}
+		},
+		{
+			field: 'platform',
+			title: '平台'
+		},
+		{
+			field: 'website',
+			title: '网址'
+		},
+		{
+			field: 'account',
+			title: '账号'
+		},
+		{
+			field: 'password',
+			title: '密码'
+		},
+		{
+			field: 'siteType',
+			title: '类型'
+		},
+		{
+			field: 'email',
+			title: '注册邮箱'
+		},
+		{
+			field: 'phonenumber',
+			title: '预留手机'
+		},
+		{
+			field: 'createTime',
+			title: '创建时间'
+		},
+		{
+			field: 'updateTime',
+			title: '修改时间'
+		},
+		{
+			field: 'describle',
+			title: '备注'
+		},
+		{
+			title: '操作',
+			align: 'center',
+			formatter: function(value, row, index) {
+				var actions = [];
+				actions.push('<a class="btn btn-info btn-sm" href="#" title="编辑" onclick="edit(\'' + row.id + '\')"><i class="fa fa-edit"></i></a> ');
+				actions.push('<a class="btn btn-warning btn-sm" href="#" title="删除" onclick="remove(\'' + row.id + '\')"><i class="fa fa-remove"></i></a> ');
+				return actions.join('');
+			}
+		}
+	];
 	var url = "pages/bootstraptable/table_text.json";
-	$.initTable(columns,url);
+	$.initTable(columns, url);
 }
 
 // 初始bootstrap table数据
@@ -83,7 +86,7 @@ $.initTable = function(_columns, _url) {
 		search: true, // 是否显示搜索框功能
 		singleSelect: false, // 是否禁止多选
 		iconSize: 'undefined', // 图标大小：undefined默认的按钮尺寸 xs超小按钮sm小按钮lg大按钮
-		icons:{
+		icons: {
 			refresh: 'fa-refresh',
 			columns: 'fa-th-list',
 		},
@@ -104,14 +107,14 @@ $.initTable = function(_columns, _url) {
 			};
 		},
 		columns: _columns,
-		rowStyle:function(row,index){
-	        	var classes = ['active', 'success', 'info', 'warning', 'danger'];
-			    if (index == 0) {
-			        return {
-			            classes: classes[2]
-			        };
-			    }
-			    return {};
-	        }
+		rowStyle: function(row, index) {
+			var classes = ['active', 'success', 'info', 'warning', 'danger'];
+			if(index == 0) {
+				return {
+					classes: classes[2]
+				};
+			}
+			return {};
+		}
 	});
 }

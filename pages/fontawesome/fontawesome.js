@@ -14,10 +14,10 @@ define(function() {
 		});
 
 		cacheLayer[0] = index;
-		
+
 		//复制
 		var copyBtn = document.querySelector('.btn-clipboard2');
-		copyBtn.onclick = function(){
+		copyBtn.onclick = function() {
 			var text = $(this).data("clipboard-text");
 			copyTextToClipboard(text);
 		}
@@ -42,7 +42,7 @@ define(function() {
 		textArea.style.boxShadow = 'none';
 		textArea.style.background = 'transparent';
 		textArea.value = text;
-		
+
 		document.body.appendChild(textArea);
 		textArea.select();
 		document.execCommand('copy');

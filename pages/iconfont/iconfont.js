@@ -1,11 +1,11 @@
 define(function() {
 	var cacheLayer = [];
-	$(".fa-hover>a").on('click', function(){
-		triggerClick(1,$(this));
+	$(".fa-hover>a").on('click', function() {
+		triggerClick(1, $(this));
 	});
 
-	$(".icon-hover>a").on('click', function(){
-		triggerClick(2,$(this));
+	$(".icon-hover>a").on('click', function() {
+		triggerClick(2, $(this));
 	});
 
 	$(document).on('mousewheel DOMMouseScroll', onMouseScroll);
@@ -23,7 +23,7 @@ define(function() {
 			iconName = that.find("use").attr("xlink:href");
 
 			content = '<div class="highlight"><pre><code class="html"><span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon svg-icon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"' + iconName + '"<span class="nt">&gt;</span><span class="nt">&lt;/use&gt;</span><span class="nt">&lt;/svg&gt;</span></code>' +
-				' <a class="btn-clipboard2" data-clipboard-text="<svg class=&quot;icon svg-icon &quot; aria-hidden=&quot;true&quot;><use xlink:href=&quot;'+iconName+'&quot;></use></svg>" role="button"><i class="fa fa-clipboard"></i>复制源码</a></pre></div>';
+				' <a class="btn-clipboard2" data-clipboard-text="<svg class=&quot;icon svg-icon &quot; aria-hidden=&quot;true&quot;><use xlink:href=&quot;' + iconName + '&quot;></use></svg>" role="button"><i class="fa fa-clipboard"></i>复制源码</a></pre></div>';
 		}
 
 		var index = layer.tips(content, that, {

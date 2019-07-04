@@ -24,7 +24,7 @@ define(['select2'], function() {
 	//
 	$(".testB1").select2({
 		theme: "flat",
-		placeholder:"测试一",
+		placeholder: "测试一",
 		ajax: {
 			url: "pages/select2/testData.json",
 			dataType: 'json',
@@ -40,7 +40,7 @@ define(['select2'], function() {
 			}
 		}
 	});
-	
+
 	var data = [{
 			id: 0,
 			text: '华为'
@@ -63,8 +63,8 @@ define(['select2'], function() {
 		}
 	];
 	$(".testB2").select2({
-		theme:"flat",
-		placeholder:"测试二",
-		data:data
+		theme: "flat",
+		placeholder: "测试二",
+		data: data
 	});
 });

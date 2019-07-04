@@ -12,12 +12,9 @@
 }
 
 .box-list {
-	/*display: ;
-	flex-wrap: wrap;
-	justify-content: space-between;*/
 	-webkit-column-count: 4;
 	-webkit-column-gap: 20px;
-	-webkit-column-fil: auto;
+	-webkit-column-fill: auto;
 	column-count: 4;
 	column-gap: 20px;
 	column-fill: auto;
@@ -59,7 +56,6 @@
 	font: 12px sans-serif;
 	background: lightsteelblue;
 	pointer-events: none;
-	
 	background: rgba(0, 0, 0, 0.9);
 	border: 1px solid grey;
 	border-radius: 5px;
@@ -74,4 +70,3 @@
 	font-size: 14px;
 	line-height: 1.75;
 }
-

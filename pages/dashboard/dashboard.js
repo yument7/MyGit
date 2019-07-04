@@ -1,3 +1,6 @@
 define(['fancybox'], function() {
-    $(".fancybox").fancybox({ openEffect: "none", closeEffect: "none" });
+	$(".fancybox").fancybox({
+		openEffect: "none",
+		closeEffect: "none"
+	});
 });
