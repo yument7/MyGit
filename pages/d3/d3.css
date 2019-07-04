@@ -1,0 +1,77 @@
+.d3 {
+	height: 240px;
+}
+
+.box-content p {
+	line-height: 1.75;
+}
+
+.box-content p>a {
+	font-style: italic;
+	color: #0366D6;
+}
+
+.box-list {
+	/*display: ;
+	flex-wrap: wrap;
+	justify-content: space-between;*/
+	-webkit-column-count: 4;
+	-webkit-column-gap: 20px;
+	-webkit-column-fil: auto;
+	column-count: 4;
+	column-gap: 20px;
+	column-fill: auto;
+}
+
+.box-list dl.root-dl {
+	width: 100%;
+	display: inline-block;
+	border: 1px solid #E7EAEC;
+	margin-bottom: 5px;
+	background: #f9f6ed;
+	border-radius: 2px;
+}
+
+.box-list dl.root-dl>dt {
+	padding: 10px 10px 5px;
+}
+
+.box-list dl.root-dl>dt>label {
+	padding: 5px 10px;
+	background: #00B7EE;
+	color: #fff;
+	border-radius: 2px;
+}
+
+.box-list dl.root-dl>dd {
+	padding: 5px 10px 10px;
+}
+
+.box-list dl.root-dl a {
+	display: block;
+	line-height: 1.75;
+}
+
+#tooltip {
+	position: absolute;
+	text-align: center;
+	padding: 10px 20px;
+	font: 12px sans-serif;
+	background: lightsteelblue;
+	pointer-events: none;
+	
+	background: rgba(0, 0, 0, 0.9);
+	border: 1px solid grey;
+	border-radius: 5px;
+	font-size: 12px;
+	width: auto;
+	color: white;
+	opacity: 0;
+}
+
+#tooltip h4 {
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.75;
+}
+

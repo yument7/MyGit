@@ -1,0 +1,294 @@
+<!-- d3 -->
+<div id="d3" class="layui-fluid wrapper wrapper-content animated fadeIn" name="d3">
+	<div class="layui-row">
+		<div class="layui-col-lg12 pb15">
+			<div class="layui-card">
+				<div class="layui-card-header my-title">
+					<span>
+						<h3 class="border-btm-green">D3概述</h3>
+					</span>
+				</div>
+				<div class="layui-card-body">
+					<div class="box-content pbt10">
+						<p>D3是一个基于数据操作文档的JavaScript库。D3帮助您使用HTML、SVG和CSS实现数据。D3对web标准的强调为您提供了现代浏览器的全部功能，而不需要将自己绑定到专有框架，它结合了强大的可视化组件和DOM操作的数据驱动方法
+							<a href="https://d3js.org" target="_blank">了解更多</a>
+						</p>
+						<p>D3官网：
+							<a href="https://d3js.org" target="_blank">https://d3js.org</a>
+						</p>
+						<p>github：
+							<a href="https://github.com/d3/d3" target="_blank">https://github.com/d3/d3</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="layui-row">
+		<div class="layui-col-lg12 pb15">
+			<div class="layui-card">
+				<div class="layui-card-header">
+					<span>
+						<h5>D3-API-总览</h5>
+					</span>
+					<div class="card-tools">
+						<a class="collapse-link">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+						<a class="close-link">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="layui-card-body">
+					<div class="box-list pbt10">
+						<dl class="root-dl">
+							<dt>
+								<label>选择元素</label>
+							</dt>
+							<dd>
+								<a>选择 (选择, 修改, 数据, 事件, 控制, 命名空间)</a>
+							</dd>
+						</dl>
+						<dl class="root-dl">
+							<dt><label>数据类型</label></dt>
+							<dd>
+								<a>数组 (统计, 直方图, 查找, 转换)</a>
+								<a>集合 (对象, 映射（map）, 集合（set）, 嵌套)</a>
+								<a>颜色</a>
+								<a>DSV（分隔符分割的值）</a>
+								<a>随机值</a>
+								<a>时间序列</a>
+							</dd>
+						</dl>
+						<dl class="root-dl">
+							<dt><label>格式化</label></dt>
+							<dd>
+								<a>数字格式化</a>
+								<a>时间格式化</a>
+							</dd>
+						</dl>
+						<dl class="root-dl">
+							<dt><label>加载数据</label></dt>
+							<dd>
+								<a>队列</a>
+								<a>请求</a>
+							</dd>
+						</dl>
+						<dl class="root-dl">
+							<dt><label>数据映射</label></dt>
+							<dd>
+								<a>比例尺 (连续型, 颜色序数型, 数值型, 序数型, 分类颜色型)</a>
+							</dd>
+						</dl>
+						<dl class="root-dl">
+							<dt><label>图形几何</label></dt>
+							<dd>
+								<a>形状 (弧, 饼, 线, 面积, 曲线, 符号, 堆叠)</a>
+								<a>轴</a>
+								<a>泰森多边形</a>
+								<a>路径</a>
+								<a>多边形</a>
+								<a>四叉树</a>
+							</dd>
+						</dl>
+						<dl class="root-dl">
+							<dt><label>布局</label></dt>
+							<dd>
+								<a>力布局</a>
+								<a>层次布局</a>
+							</dd>
+						</dl>
+						<dl class="root-dl">
+							<dt><label>动态交互</label></dt>
+							<dd>
+								<a>定时器</a>
+								<a>过渡</a>
+								<a>插值器</a>
+								<a>缓动</a>
+								<a>事件分派</a>
+								<a>拖动</a>
+								<a>缩放</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="layui-row">
+		<div class="layui-col-lg6 prb1015">
+			<div class="layui-card float-e-margins">
+				<div class="layui-card-header">
+					<h5>折线图</h5>
+					<div class="card-tools">
+						<a class="collapse-link">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+						<a class="close-link">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="layui-card-body">
+					<div class="echarts" id="echarts-line-chart"></div>
+				</div>
+			</div>
+		</div>
+		<div class="layui-col-lg6 plb1015">
+			<div class="layui-card float-e-margins">
+				<div class="layui-card-header ">
+					<h5>柱状图</h5>
+					<div class="card-tools">
+						<a class="collapse-link">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+						<a class="close-link">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="layui-card-body">
+					<div class="echarts" id="echarts-bar-chart"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="layui-row">
+		<div class="layui-col-lg6 prb1015">
+			<div class="layui-card float-e-margins">
+				<div class="layui-card-header ">
+					<h5>散点图</h5>
+					<div class="card-tools">
+						<a class="collapse-link">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+
+						<a class="close-link">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="layui-card-body">
+					<div class="echarts" id="echarts-scatter-chart"></div>
+				</div>
+			</div>
+		</div>
+		<div class="layui-col-lg6 plb1015">
+			<div class="layui-card float-e-margins">
+				<div class="layui-card-header ">
+					<h5>K线图</h5>
+					<div class="card-tools">
+						<a class="collapse-link">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+
+						<a class="close-link">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="layui-card-body">
+					<div class="echarts" id="echarts-k-chart"></div>
+				</div>
+			</div>
+		</div>
+		<div class="layui-col-lg6 prb1015">
+			<div class="layui-card float-e-margins">
+				<div class="layui-card-header ">
+					<h5>饼状图</h5>
+					<div class="card-tools">
+						<a class="collapse-link">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+
+						<a class="close-link">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="layui-card-body">
+					<div class="echarts" id="echarts-pie-chart"></div>
+				</div>
+			</div>
+		</div>
+		<div class="layui-col-lg6 plb1015">
+			<div class="layui-card float-e-margins">
+				<div class="layui-card-header ">
+					<h5>雷达图</h5>
+					<div class="card-tools">
+						<a class="collapse-link">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+
+						<a class="close-link">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="layui-card-body">
+					<div class="echarts" id="echarts-radar-chart"></div>
+				</div>
+			</div>
+		</div>
+		<div class="layui-col-lg6 prb1015">
+			<div class="layui-card float-e-margins">
+				<div class="layui-card-header">
+					<h5>漏斗图</h5>
+					<div class="card-tools">
+						<a class="collapse-link">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+						<a class="close-link">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="layui-card-body">
+					<div class="echarts" id="echarts-funnel-chart"></div>
+				</div>
+			</div>
+		</div>
+		<div class="layui-col-lg6 plb1015">
+			<div class="layui-card float-e-margins">
+				<div class="layui-card-header">
+					<h5>仪表盘</h5>
+					<div class="card-tools">
+						<a class="collapse-link">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+						<a class="close-link">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="layui-card-body">
+					<div class="echarts" id="echarts-gauge-chart"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="layui-row">
+		<div class="layui-col-lg12">
+			<div class="layui-card float-e-margins">
+				<div class="layui-card-header">
+					<h5>中国地图</h5>
+					<div class="card-tools">
+						<a class="collapse-link">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+						<a class="close-link">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="layui-card-body">
+					<div style="height:600px;position: relative;" id="d3-map">
+						<!-- 地图提示 -->
+						<div id="tooltip"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

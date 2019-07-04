@@ -12,23 +12,21 @@
 
 .my-card-title{
 	position: relative;
-    height: 40px;
     padding: 0;
     border-bottom: 2px solid #63B8FF;
     color: #333;
     font-size: 14px;
     overflow: hidden;
     font-size: 0;
+    background-color: #FFFFFF;
 }
 .my-card-title>span{
 	display: inline-block;
 	box-sizing: border-box;
 	font-weight: 600;
 	font-size: 16px;
-	padding:0 15px;
-	height: 40px;
+	padding:12px 15px 0 15px;
     line-height: 28px;
-   padding-top: 7px;
     vertical-align: middle;
 }
 

@@ -20,6 +20,7 @@ require.config({
 		hchartExport: 'highcharts/modules/exporting',
 		hchartMore: 'highcharts/highcharts-more',
 		highcharts3d: 'highcharts/highcharts-3d',
+		d3:'d3/dist/d3.min',
 		fancybox: 'fancybox/dist/js/jquery.fancybox',
 		icheck:'icheck/icheck.min',
 		select2:'select2/dist/js/select2.full.min',
