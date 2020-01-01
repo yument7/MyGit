@@ -45,7 +45,7 @@ require.config({
 			deps: ['jquery']
 		},
 		tabsMenu:{
-			deps:['css!tabsmenu/dist/tabsmenu.min.css']
+			deps:['css!tabsmenu/dist/tabsMenu.min.css']
 		},
 		fancybox: {
 			deps: ['css!../node_modules/fancybox/dist/css/jquery.fancybox.css']
